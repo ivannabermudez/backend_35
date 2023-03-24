@@ -1,5 +1,36 @@
-create a virtual env 
+----- create a virtual environment ------
 python -m venv venv 
 
-mac: source venc/bin/activate
+------ activate the venv (virtual env)--------
+win:venv/Scripts/activate
+mac: source venv/bin/activate
+
+#install flasks
+python3 -m pip install flask
+
+#run the server (venv must be activate)
+python3 server.py 
+
+---- New Project ---------
+# initialize the Repo
+git init
+
+-------# create local snapshot ---------
+git add .
+git commit -m "Somethig"
+
+# setup the remote url
+git remote add origin <URL>
+
+# upload to server
+git push -u origin main
+
+
+----- Subsequent push ------
+git init 
+
+git add .
+git commit -m  "Something"
+
+git push
 

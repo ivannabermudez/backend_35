@@ -1,0 +1,12 @@
+TC instructions
+
+go to the lightning icon 
+
+click on new request 
+
+get link from the api address that you get when you open the file o nthe terminal
+
+then paste the link and add /api/catalog
+
+"catalog" is the name of the file 
+
