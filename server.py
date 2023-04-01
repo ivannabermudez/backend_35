@@ -49,14 +49,14 @@ def get_catalog():
 
 #get /api/product/count 
 # return the number of products in the catalog
-@app.get("api/product/count")
+@app.get("/api/product/count")
 def products_count():
     count = len(mock_data)
     return json.dumps(count)
 
 # get/api/categories 
 # return a list of categories
-@app.get("api/products/total")
+@app.get("/api/products/total")
 def sum_prices():
     total = 0 
     for product in mock_data:
@@ -77,11 +77,11 @@ def categories():
 
     return json.dumps(cats)
 
-@app.get("api/catalog/<category>")
+@app.get("/api/catalog/<category>")
 def products_by_category(category):
     results = []
     for prod in mock_data:
-        if prod["category"].lower() == category. lower:
+        if prod["category"].lower() == category.lower():
             results.append(prod)
 
     return json.dumps(results)
@@ -94,6 +94,35 @@ def products_by_category(category):
 # at the end of the for loop, return the list
 
 #categoories = ["milk", "barista", "sweeteners"]
+
+@app.get("/api/products/lower/<price>")
+def products_lower_price(price):
+    fixed_price = float(price)
+    results = []
+    for prod in mock_data:
+        if prod["price"] < fixed_price: 
+            results.append(prod)
+
+    return json.dumps(results)
+
+@app.get("/api/products/greater/<price>")
+def products_greater_price(price):
+    fixed_price = float(price)
+    results = []
+    for prod in mock_data:
+        if prod["price"] >= fixed_price: 
+            results.append(prod)
+
+    return json.dumps(results)
+
+@app.get('/api/products/search/<term>')
+def search_products(term):
+    results = []
+    for prod in mock_data:
+        if term.lower() in prod["title"].lower():
+            results.append(prod)
+            
+    return json.dumps(results)
 
 
 
