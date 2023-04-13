@@ -2,7 +2,7 @@ mock_data = [
     {
         "title": "Almond Milk",
         "category": "milks",
-        "price": 15.99,
+        "price": 4.99,
         "image": "milk.webp",
         "_id": "75839475860"
     },
@@ -16,14 +16,14 @@ mock_data = [
     {
         "title": "Oat Milk",
         "category": "milks",
-        "price": 7.99,
+        "price": 3.99,
         "image": "oatmilk.jpeg",
         "_id": "75839475880"
     },
     {
         "title": "Chai Tea Blend",
         "category": "barista",
-        "price": 18.99,
+        "price": 11.99,
         "image": "chaiblend.webp",
         "_id": "75839475890"
     },
@@ -37,8 +37,35 @@ mock_data = [
     {
         "title": "Wildflower Honey",
         "category": "sweeteners",
-        "price": 1.99,
+        "price": 3.99,
         "image": "wildflower.jpeg",
         "_id": "75839475860"
+    },
+    {
+        "title": "Organic Molases Syrup",
+        "category": "sweeteners",
+        "price": 4.99,
+        "image": "molases.jpeg",
+        "_id": "75839475760"
+    
+    },
+    {
+    "title": "Organic Coconut Milk",
+        "category": "milks",
+        "price": 4.99,
+        "image": "coconutmilk.webp",
+        "_id": "75839475760"
+    
+    },
+    {
+    "title": "Organic Soy Milk",
+        "category": "milks",
+        "price": 3.99,
+        "image": "soymilk.webp",
+        "_id": "75839475760"
     }
+    
+
+
+
 ]
